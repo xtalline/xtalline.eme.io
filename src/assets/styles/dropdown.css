@@ -1,0 +1,226 @@
+p, img, h1, h2, h3, h4, h5,h6, button {
+    user-select: none;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+
+.dropdown-menu{
+    position: absolute;
+    top: 65px;
+    background-color: #FFFFFF;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    z-index: 200;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+    
+.dropdown-menu::before{
+    content: '';
+    position: absolute;
+    top: -9px;
+    right: 20px;
+    height: 15px;
+    width: 15px;
+    background: #ffffff;
+    transform: rotate(45deg);
+    z-index: 100;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.dropdownItem{
+    background-color: transparent;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    align-items: center;
+    z-index: 100;
+}
+
+.dropdownItemIC{
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color: #FFFFFF;
+    border-radius: 100vw;
+}
+.dropdownItemText{
+    color: #000000;
+    margin-left: 25px;
+}
+.dropdownItemFrwrdIC{
+    position: absolute;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dropdownItem:hover{
+    cursor: pointer;
+    background-color:  #ecececc4;
+}
+
+/*Dropdown Notif Item*/
+.dropdown-notif{
+    display: flex;
+    align-items: center;
+}
+.dropdown-notif .dropdown-menu{
+    right: 72px;
+    width: 400px;
+    height: 500px;
+    display: flex;
+}
+.dropdown-notif-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+    .dropdown-notif-header h2{
+        width: 55%;
+        margin: 0 4px;
+    }
+    .dropdown-notif-header button{
+        background-color: transparent;
+        border-radius: 5px;
+        padding: 5px;
+        cursor: pointer;
+        width: 20%;
+    }
+        .dropdown-notif-header button:nth-of-type(1):hover{
+            background-color: #607442;
+            color: #ececec;
+        }
+        .dropdown-notif-header button:nth-of-type(2):hover{
+            color: red;
+            background-color: #ececec;
+        }
+
+.dropdown-notif-wrapper{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.dropdown-notif .dropdownItem{
+    justify-content: space-between;
+    padding: 15px;
+    width: 100%;
+}
+
+.dropdownItem img{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.dropdown-notif-info{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 6px;
+}
+.dropdown-notif-info h4, .dropdown-notif-info p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.dropdown-notif-info h4{
+    font-size: .9rem;
+}
+.dropdown-notif-info p{
+    font-size: .8rem;
+}
+
+.notif-btn-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 22%;
+}
+
+.notif-btn{
+    border-radius: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.accept{
+    border: 1px solid #607442;
+    color: #607442;
+}
+
+.reject{
+    border: 1px solid red;
+    color: red;
+}
+.accept:hover{
+    background-color: #607442;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.reject:hover{
+    background-color: red;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+/*Scroll Bar*/
+::-webkit-scrollbar {
+    width: .35em;
+    height: 1em;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 100vw;
+    margin-block:  .2em;
+    margin-right: 10px;
+    
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #475334c5;
+    border-radius: 100vw;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #475334
+  }
+  
+  .status-circle{
+    color: transparent;
+    content: "";
+    font-size: 0;
+    border-radius: 100vw;
+    width: 9px;
+    height: 8px;
+  }

@@ -1,0 +1,89 @@
+.header-logo{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .header-logo img{
+        height: 100%;
+        cursor: pointer;
+    }
+
+.header-search-bar-container{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .header-search-bar{
+        width: 90%;
+        height: 70%;
+        border-radius: 100vw;
+        border: 1px solid #475334;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .search-ic{
+        color: #475334;
+        height: 100%;
+    }
+    input[type="search"]{
+        width: 85%;
+        font-size: 1rem;
+        padding: 5px 0;
+    }
+    input[type="search"]:focus{
+        outline: none;
+    }
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-decoration {
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+.header-nav{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+}
+    .header-nav-ic{
+        background-color: #ecececc4;
+        border-radius: 100%;
+        width: 36px;
+        height: 36px;
+        padding: 5px;
+        color: #475334c5;
+        margin: 0 5px;
+    }
+        .header-nav-ic:hover{
+            color: #475334;
+            background-color: #cdcdcd;
+        }
+    .header-nav-profile{
+        height: 36px;
+        width: 36px;
+        border-radius: 100vw;
+        cursor: pointer;
+        margin: 0 5px;
+    }
+
+@media (max-width: 800px){
+    .header-logo{
+        width: 10%;
+        padding: 10px;
+    }
+    .header-search-bar-container{
+        width: 75%;
+    }
+    .header-nav{
+        padding: 0 10px;
+    }
+
+
+}

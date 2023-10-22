@@ -1,0 +1,14 @@
+.notif-badge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 5px;
+    font-size: .75rem;
+    font-weight: 600;
+    color: #475334;
+    margin-top: -25px;
+    margin-left: 25px;
+    padding: 0 3px;
+    background-color:  hsl(22, 100%, 65%);
+}

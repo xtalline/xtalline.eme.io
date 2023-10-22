@@ -1,0 +1,138 @@
+.schedule-wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 0px;
+}
+
+.schedule-wrapper-header{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    padding: 40px 120px;
+    border-bottom: 1px solid #ececec;
+}
+    .schedule-wrapper-header > .back-btn{
+        height: 40px;
+        width: 40px;
+        background-color: #475334;
+        border-radius: 100%;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .schedule-wrapper-header h1{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .schedule-wrapper-header .add, .schedule-wrapper-header .delete{
+        width: 100px;
+        height: 40px;
+        border-radius: 5px;
+        font-size: .75rem;
+        font-weight: 600;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+        .schedule-wrapper-header .add{
+            background-color: #475334;
+            color: #FFFFFF;
+            }
+            .schedule-wrapper-header .add:hover{
+                background-color: #bdbdbd;
+                color: #475334;
+    }
+        .schedule-wrapper-header .delete{
+                background-color: crimson;
+                color: #FFFFFF;
+        }
+            .schedule-wrapper-header .delete:hover{
+                background-color: #bdbdbd;
+                color: red;
+            }
+
+
+.schedule-item-wrapper{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.schedule-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height:300px;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 0 4px;
+    border: 1px solid #010101;
+    background-color: #FFFFFF;
+}   
+    .schedule-item-header{
+        width: 100%;
+        height: 20%;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, 0.2);
+        background-color: #FFFFFF;
+    }
+        .schedule-item-header h5{
+            width:75%;
+        }
+        .schedule-item-ic{
+            width: 25px;
+            height: 25px;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: #ecececc4;
+            margin-left: 7px;
+        }
+            .edit:hover{
+                background-color: #475334;
+                color: #FFFFFF;
+            }
+            .delete:hover{
+                background-color: crimson;
+                color: #FFFFFF;
+            }
+
+    .schedule-item-content{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 25px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+        .schedule-detail{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            min-height: 35px;
+            padding: 0 10px;
+            margin-bottom: 10px ;
+            border-bottom: 1px solid #adadad;
+        }
+        .schedule-detail p, .schedule-detail h6{
+            font-size: 1rem;
+        }
+        .schedule-detail h6{
+            font-weight: 500;
+        }

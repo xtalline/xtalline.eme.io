@@ -1,0 +1,16 @@
+.details-table-wrapper{
+    width: 100%;
+    display: flex;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.details-table{
+    border-collapse: collapse;
+    height: 100%;
+}
+
+.details-table > tr > td{
+    width: max-content;
+    background-color: #f7f7f7;
+}
+

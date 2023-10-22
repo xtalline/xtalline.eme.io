@@ -1,0 +1,237 @@
+.pop-up-wrapper, .pop-up-overlay{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 300;
+}
+.pop-up-overlay{
+    background: #303030b2;
+}
+  .pop-up-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #F1F1F1;
+    padding: 15px 30px;
+    border-radius: 5px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 70%;
+  }
+      .pop-up-edit{
+        width: 700px;
+        height: 700px;
+      }
+
+      .pop-up-delete{
+        width: 600px;
+      }
+
+  .pop-up-content h1{
+    color: #475334;
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .pop-up-content form{
+    width: 100%;
+  }
+
+  .pop-up-add-room-input{
+    width: 100%;
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 12px;
+    margin: 10px 0;
+  }
+
+  .btn-container{
+    display: flex;
+    justify-content: space-around;
+  }
+  .pop-up-btn{
+    padding: 15px 25px;
+    margin: 35px 20px 20px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    .pop-up-btn:nth-of-type(1){
+        background-color: #475334;
+        color: #FFFFFF;
+        width: 120px;
+    }
+
+    .pop-up-btn:nth-of-type(2){
+        background-color: #d3d3d3;
+        color: #000000;
+        width: 120px; 
+    }
+
+  
+/*Add schedule */
+.days-btn-container{
+  width: 60%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.day-btn {
+  border: 1px solid #475334;
+  background-color: transparent;
+  border-radius: 5px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.day-btn:hover {
+  background-color: #47533489;
+  color: #FFFFFF;
+}
+
+.selected {
+  background-color: #475334;
+  color: #FFFFFF;
+}
+
+.add-edit-sched-container{
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px 5px;
+}
+
+.add-sched-inputs{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border: 1px solid #475334;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.input-timepicker-container{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 10px;
+}
+.sched-title-input{
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #c1c1c1;
+}
+
+.delete-btn-container{
+  width: 10%;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.delete-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  color: crimson;
+  background-color: transparent;
+}
+  .delete-btn:hover{
+    background-color: #ececec;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+.add-btn-container{
+  padding: 10px 30px;
+  width: 100%;
+  display: flex;
+}
+.add-btn{
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #c1c1c1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+  .add-btn:hover{
+    background-color: #475334;
+    color: #FFFFFF;
+  }
+
+/*Edit Schedule Popup*/
+.schedule-label{
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: italic;
+  color: #475334;
+  text-transform: uppercase;
+  display: flex;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/*Whereabouts Details Popup*/
+/**/
+.whereabouts-details-pop-up{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 500;
+}
+
+.whereabouts-details-pop-up > .pop-up-overlay >.pop-up-content{
+  width: 600px;
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #FFFFFF;
+}
+
+.whereabouts-details-pop-up > .pop-up-overlay >.pop-up-content > h3{
+  font-size: 1.2rem;
+  margin: 10px;
+  text-align: center;
+}
+.whereabouts-details-pop-up > .pop-up-overlay >.pop-up-content > img{
+  width: 100px;
+  border-radius: 5px; 
+}
+
+.whereabouts-details-pop-up > .pop-up-overlay >.pop-up-content > button{
+  background-color: #475334;
+  color: #FFFFFF;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px; 
+  width: 150px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
