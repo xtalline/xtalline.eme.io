@@ -8,7 +8,7 @@ import Whereabouts from "./pages/Whereabouts";
 import Profile from "./pages/Profile";
 import Schedule from "./pages/Schedule";
 import Header from "./pages/Header";
-import supabase from "./config/supabaseClient";
+import supabase from "./config/supabaseClient"; 
 
 function App() {
     const [token, setToken] = useState(false)
